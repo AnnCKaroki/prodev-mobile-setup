@@ -34,6 +34,7 @@ prodev-mobile-app-0x01/
 **File**: `app/index.tsx`
 **Components Created**:
 - Main container with light blue background (#90caf9)
+- "Entry Screen - Awesome" (title, 28px, black color, bold, center-aligned)
 - "Typescript is great if you practice more" (large text, 30px, red color, bold)
 - "React Native provides you a single codebase for cross platforms" (medium text, 20px, purple color, right-aligned)
 - "ALX is awesome" (small text, 15px, blue color, center-aligned)
@@ -46,6 +47,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function EntryScreen() {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Entry Screen - Awesome</Text>
       <Text style={styles.largeText}>Typescript is great if you practice more</Text>
       <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
       <Text style={styles.smallText}>ALX is awesome</Text>
@@ -59,6 +61,13 @@ export default function EntryScreen() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#90caf9",
+  },
+  title: {
+    fontSize: 28,
+    color: "#000000",
+    marginBottom: 20,
+    fontWeight: "bold",
+    textAlign: "center",
   },
   largeText: {
     fontSize: 30,
